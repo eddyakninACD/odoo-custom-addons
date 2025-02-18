@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_factory_item_user,Factory Item User,model_factory_item,,1,0,0,0
+access_factory_item_manager,Factory Item Manager,model_factory_item,,1,1,1,1
+

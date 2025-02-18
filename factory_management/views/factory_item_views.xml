@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_factory_item_form" model="ir.ui.view">
+        <field name="name">factory.item.form</field>
+        <field name="model">factory.item</field>
+        <field name="arch" type="xml">
+            <form string="Factory Item">
+                <sheet>
+                    <group>
+                        <field name="item_code"/>
+                        <field name="reference_code"/>
+                        <field name="barcode"/>
+                        <field name="product_category_id"/>
+                        <field name="supplier_id"/>
+                        <field name="sale_price"/>
+                        <field name="stock_quantity"/>
+                        <field name="is_active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_factory_item_tree" model="ir.ui.view">
+        <field name="name">factory.item.tree</field>
+        <field name="model">factory.item</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="item_code"/>
+                <field name="reference_code"/>
+                <field name="barcode"/>
+                <field name="sale_price"/>
+                <field name="stock_quantity"/>
+                <field name="is_active"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="factory_management_menu" name="Factory Management" sequence="10"/>
+    <menuitem id="menu_factory_items" name="Factory Items" parent="factory_management_menu" action="action_factory_item"/>
+</odoo>
+        ""
